@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A Quick Dive into C++</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>C++ Topics</h1>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Prerequisite_Knowledge" class="nav-link">Prerequisite Knowledge</a>
+        <a href="#First_Code" class="nav-link">First Code</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <a href="#Conditional_Statements" class="nav-link">Conditional Statements</a>
+        <a href="#Conclusion" class="nav-link">Conclusion</a>
+        <a href="#Reference" class="nav-link">Reference</a>
+      </header>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <p>C++ is a general-purpose programming language that was developed as an enhancement of the C language to include object-oriented paradigm. It is an imperative and a compiled language.</p>
+        <p>While containing majority of the features in C, it adds object-oriented-programming (OOP) by offering classes. In return, this provides four features commonly present in OOP: abstraction, encapsulation, inheritance, and polymorphism.</p>
+        <p>How it started? It was developed by Bjarne Stroustrup at Bell Labs in 1983!</p>
+      </section>
+      <section class="main-section" id="Prerequisite_Knowledge">
+        <header>
+          <h2>Prerequisite Knowledge</h2>
+        </header>
+        <p>The prerequisite knowledge you need to know:</p>
+        <ul>
+          <li>Some programming experience. This could be with languages such as javascript, python, java, etc.</li>
+          <li>A general understanding of the C language and its syntax.</li>
+          <li>A general understanding of object-oriented-programming.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="First_Code">
+        <header>
+          <h2>First Code</h2>
+        </header>
+        <p>The keyword "std::" is used before io statements cin (input) and cout (output) as it indicates that these statements are in the namespace whose name is by default, std. There is a way to bypass doing this by declaring "using namespace std" in the header. However, this is not best practice as it can lead to naming collisions of namespaces.</p>
+        <p>Now to actually write some code. Here is the syntax and an example of how to write an output statement:</p>
+        <pre><code>std::cout << "Hello World!";</code></pre>
+        <p>Here is the syntax and an example of an input statement:</p>
+        <pre>
+<code>int input;</code>
+<code>std::cout << "Enter an integer number:";</code>
+<code>std::cin >> input;</code>
+        </pre>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>
+          <h2>Variables</h2>
+        </header>
+        <p>Variables are a named container with data associated with it (strings, integers, chars, etc.).</p>
+        <p>That said, there is not an unified way to declare a variable as there are many data types in c++. However, below I will show an example of how to declare variables of some basic data types:</p>
+        <p>Integers:</p>
+        <pre><code>int x = 10;</code></pre>
+        <p>Doubles:</p>
+        <pre><code>double y = 10.75;</code></pre>
+        <p>Strings:</p>
+        <pre><code>std::string name = "Adam";</code></pre>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>
+          <h2>Data Types</h2>
+        </header>
+        <p>Data types are categories of data based on their attributes. They determine the values a variable can store and the operations that can be performed on them.</p>
+        <p>According for GeeksforGeeks, there are seven data types:</p>
+        <ul>
+          <li>Integer: Integer numbers such as 1,2 and 3.</li>
+          <li>Characters. A single character such as 'a', 'b', 'c'. Can accomadate 256 values.</li>
+          <li>Boolean. True or false.</li>
+          <li>Floating Point. Decimal value numbers of 32 bits (4 bytes).</li>
+          <li>Double Floating Point. Can store twice the number of decimal values as floats, 64 bits (8 bytes).</li>
+          <li>Void. Has no value.</li>
+          <li>Wide Characters. Takes up more space than characters, but it can accept more values (65536 values).</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Conditional_Statements">
+        <header>
+          <h2>Conditional Statements</h2>
+        </header>
+        <p>A conditional statement tells a program to execute an action depending on whether a condition is true or false.</p>
+        <p>The conditional logic for c++ follows the same mathematical conditional logic. Here is a quick run down of conditional operators:</p>
+        <ul>
+          <li><: Less than.</li>
+          <li>>: Greater than.</li>
+          <li><=: Less than or equal to.</li>
+          <li>>=: Greater than or equal to.</li>
+          <li>==: Is equal to.</li>
+        </ul>
+        <p>There are operators that can be used to combine conditional statements. "&&" means <b>AND</b> and "||" means <b>OR</b>.</p>
+        <p>Now, here is a list of various conditional operators and how to write them:</p>
+        <ul>
+          <li>If Statements:</li>
+          <pre><code>if(x < y) return 20;</code></pre>
+          <li>Else-If Statements:</li>
+          <pre><code>else if(x < z) return 30;</code></pre>
+          <li>Switch Cases:</li>
+          <pre><code>switch(day) {</code>
+<code>case 1:</code>
+<code>std::cout << "Monday";</code>
+<code>break;</code>
+<code>}</code></pre>
+        </ul>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header>
+          <h2>Conclusion</h2>
+        </header>
+        <p>C++ is used in fields such as system software, game development, embedded systems, scientific computing and high-performance applications. The C++ standard library provides a range of coding utilities and functions, making it easy to develop complex software systems.</p>
+        <p>Hopefully this brief overview of the C++ language served of use to gain a better grasp and understanding of the language. That said, I strongly encourage you to delve into reputable textbooks and articles about the language to learn more.</p>
+        <p>Happy Coding!</p>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>
+          <h2>Reference</h2>
+        </header>
+        <p>I used <a id="reference-link" target="_blank" href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>, <a id="reference-link" target="_blank" href="https://www.techtarget.com/searchdatamanagement/definition/C#:~:text=C%2B%2B%20is%20used%20in%20fields,to%20develop%20complex%20software%20systems.">TechTarget</a>, and <a id="reference-link" target="_blank" href="https://www.vaia.com/en-us/explanations/computer-science/computer-programming/data-types-in-programming/#:~:text=Data%20types%20in%20programming%20refer%20to%20the,operations%20that%20can%20be%20performed%20on%20them.">Vaia</a> as references for making this quick C++ overview.</p>
+      </section>
+    </main>
